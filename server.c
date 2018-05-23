@@ -14,21 +14,22 @@
 
 #define port "8080"
 // Directory to put in your files you want to host.
-#define webroot "/Users/luipokit/Desktop/comp4621_project"
+//#define webroot "/Users/luipokit/Desktop/comp4621_project"
+#define webroot "/Users/luipokit/Documents/GitHub/comp4621"
 #define MAXTHREAD (20)
 
 
 int get_file_size(int fd)
 {
 	struct stat stat_struct;
-	if(fstat(fd, &stat_struct) == -1)
+	if(fstat(fd, &stat_struct) < 0){
 		return(1);
+	}
 	return (int)stat_struct.st_size;
 }
 void send_new(int fd,char *msg)
 {
-	int len = strlen(msg);
-	if(send(fd,msg,len,0) == -1)
+	if(send(fd,msg,strlen(msg),0) < 0)
 	{
 		printf("Error in send\n");
 	}
