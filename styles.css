@@ -1,0 +1,19 @@
+h1 {
+    color: black;
+    font-family: Georgia;
+    font-size: 200%;
+}
+h2 {
+    color: red;
+    font-family: Georgia;
+    font-size: 200%;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+
+a {
+	font-size: 200%;
+}
