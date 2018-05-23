@@ -14,7 +14,6 @@
 
 #define port "8080"
 // Directory to put in your files you want to host.
-//#define webroot "/Users/luipokit/Desktop/comp4621_project"
 #define webroot "/Users/luipokit/Documents/GitHub/comp4621"
 #define MAXTHREAD (20)
 
